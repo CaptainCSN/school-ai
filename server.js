@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json({ limit: "2mb" }));
 
 const port = process.env.PORT || 3000;
-const MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+const MODEL = process.env.OPENAI_MODEL || "gpt-5.4";
 const APP_VERSION = "canvas-dashboard-v4";
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
